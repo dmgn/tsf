@@ -1,0 +1,7 @@
+{
+  "name": "intSur",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

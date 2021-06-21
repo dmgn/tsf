@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title><strong>Dashboard</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div>
+  <div class="square">
+    
+    <div class="content" [routerLink]="['videolive']"> 
+      <ion-icon style="color:#E63135;" slot="start" name="eye"></ion-icon>
+      <br>
+      <ion-label>Live Video</ion-label>    
+    </div>
+
+  </div>
+
+  <div class="square">
+    <div class="content" [routerLink]="['videoreplay']">
+      <ion-icon style="color:#0CA9EA" slot="start" name="videocam"></ion-icon>
+      <br>
+      <ion-label style="color:#0CA9EA">Remote Playback</ion-label>    
+    </div>
+  </div>
+
+  <div class="square">
+    <div class="content" [routerLink]="['devices']">
+      <ion-icon slot="start" style="color:#78BD43" name="play-circle"></ion-icon>
+      <br>
+      <ion-label style="color:#78BD43">Devices</ion-label>    
+    </div>
+  </div>
+
+  <div class="square">
+    <div class="content" [routerLink]="['reports']" >
+      <ion-icon style="color:#ea910c" slot="start" name="images"></ion-icon>
+      <br>
+      <ion-label style="color:#ea910c">Reports</ion-label>    
+
+    </div>
+  </div>
+
+  
+</div>
+</ion-content>

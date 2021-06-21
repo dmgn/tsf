@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home/dashboard" text=""></ion-back-button>
+    </ion-buttons>
+
+    <ion-title><strong>Video Library</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-card *ngFor="let img of images; let i = index">
+      <img [src]="img.url">
+      <button ion-button full color="danger" [style.margin]="0">
+              <ion-icon name="trash"></ion-icon>
+            </button>
+    </ion-card>
+  </ion-list>
+</ion-content>

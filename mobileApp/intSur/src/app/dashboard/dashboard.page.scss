@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .square {
+    width: calc(100% / 2);
+    float: left;
+    position: relative;
+    padding-bottom: calc(100% / 2);
+  }
+  
+  .square .content {
+      width: calc(100% - 5%);
+      height: calc(100% - 5%);
+      
+      margin: 3%;
+      padding: 25%;
+      position: absolute;
+      color: rgb(231, 59, 59);
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  }
+
+  ion-icon { zoom: 4 }
+
+  .img-wrapper {
+    min-height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ion-back-button{
+  display: block;
+
+}
